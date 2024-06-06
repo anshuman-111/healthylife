@@ -17,9 +17,9 @@ const Tile: React.FC<APIResponseProps> = ({code, title, description}) => {
     }, [code])
 
     return (
-        <Link href={{ pathname: "/goals/" + code, query: { description } }} className='w-full'>
-            <div className='w-[70%] h-96 mx-auto p-5 flex flex-col items-center rounded-3xl' style={{ backgroundColor: color }}>
-                <h2 className='flex flex-row justify-between gap-x-4 w-full'>
+        <Link href={{ pathname: "/goals/" + code, query: { description } }} className=''>
+            <div className='w-[100%] h-full p-5 flex flex-col items-center rounded-3xl ' style={{ backgroundColor: color }}>
+                <h2 className='flex flex-row gap-x-5 w-full'>
                     <p className='text-7xl text-white'>{code}</p>
                     <p className='text-2xl text-white'>{title}</p>
             </h2>

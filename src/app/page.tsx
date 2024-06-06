@@ -8,7 +8,7 @@ import TileContainer from "./components/HomeComponents/TileContainer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen w-screen">
+    <main className="flex flex-col min-h-screen w-screen mx-auto overflow-x-hidden">
       <Heading />
       <HeroBanner />
       <TileContainer />

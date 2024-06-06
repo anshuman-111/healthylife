@@ -13,7 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      borderRadius:{
+        "hero-border-radius": "100% 0% 100% 0% / 0% 50% 50% 100%"
+      }
     },
+    
   },
   plugins: [],
 };

@@ -3,10 +3,10 @@ import Image from 'next/image'
 import HeroImage from '../../../../public/hero_image.avif'
 const HeroBanner: React.FC = () => {
     return (
-        <section className=' w-11/12 h-full flex flex-col'>
+        <section className=' w-screen h-full flex flex-col'>
             {/* Hero Image */}
 
-            <div className='w-full h-4/5 -z-10'>
+            <div className='w-full h-[50%] -z-10 '>
                 <Image
                     src={HeroImage}
                     alt="Hero Image"
