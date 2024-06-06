@@ -18,19 +18,17 @@ export function useFetch(url: string) {
     React.useEffect(() => {
         const fetchData = async () => {
             try{
-                setLoading(true);
                 const response = await fetch(url);
                 const data = await response.json();
                 if(response.ok){
                     setGoals(data);
-                    setLoading(false);
                     setError("");
                 }else{
                     throw new Error("Error Fetching Data. Please try again later.");
                 }
                 
             }catch(error){
-                window.alert(error);
+                setError("Error Fetching Data. Please try again later.");
             }finally{
                 setLoading(false);
             }
